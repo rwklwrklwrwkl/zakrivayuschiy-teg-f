@@ -1,18 +1,378 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML — закрывающий тег</title>
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles/globals.css" />
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__logo">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__subtitle">ЗАКРЫВАЮЩИЙ ТЕГ</p>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- Карточка 1 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-1.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться
+          на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+        <p class="card__memory">Место для ваших воспоминаний о начале обучения.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 2 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-1.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички.
+          Один из них — страх перед
+          чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются
+          более
+          глубокие вопросы: с чего начать? А вдруг будет слишком сложно? Что, если я не справлюсь?</p>
+        <p class="card__memory">Место для ваших воспоминаний об освоении первого спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 3 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-6.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро смениться
+          ожиданием провала. Или вы, наоборот, могли адаптироваться с успехами и поверить в себя.</p>
+        <p class="card__memory">Место для ваших воспоминаний об освоении первого спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 4 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-3.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё
+          впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не
+          подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+        <p class="card__memory">Место для ваших воспоминаний о начале второго спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 5 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-5.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против
+          целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно
+          пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть
+          единомышленники, не правда ли?</p>
+        <p class="card__memory">Место для ваших воспоминаний об освоении третьего спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 6 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image" src="images/car-4.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться,
+          что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+        <p class="card__memory">Место для ваших воспоминаний о начале третьего спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 7 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image card__image--blur" src="images/car-7.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и
+          проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В
+          такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
+        <p class="card__memory">Место для ваших воспоминаний об окончании третьего спринта.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Карточка 8 -->
+    <article class="card">
+      <div class="card__header">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+      </div>
+      <div class="card__image-block">
+        <img class="card__image card__image--sepia" src="images/car-8.png" alt="Фургон" />
+        <span class="card__label card__label--top-right">&lt;/HTML&gt;</span>
+      </div>
+      <div class="card__content">
+        <p class="card__text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё
+          много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый
+          мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам
+          процесс познания. Ведь часто путь — и есть результат.</p>
+        <p class="card__memory">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
+      </div>
+      <div class="card__footer">
+        <button class="card__icon-button" type="button" aria-label="Лайк">
+          <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"
+            fill="none">
+            <path class="main-body" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 6.67C14.41 2.68 8.27 1.88 3.82 5.64C-.63 9.4 -1.24 15.71 2.29 20.17C5.2 23.79 14.17 31.83 17.26 34.57C17.61 34.88 17.79 35.04 18.002 35.04C18.22 35.04 18.4 34.88 18.75 34.57C21.84 31.83 30.81 23.79 33.72 20.17C37.25 15.71 36.73 9.35 32.2 5.64C27.67 1.93 21.6 2.68 18.002 6.67Z"
+              fill="white" stroke="black" stroke-width="1.5" />
+            <path class="core" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.002 9.53C18.002 9.53 16.4 6.02 12.79 6.02C9.18 6.02 7.6 9.44 7.6 11.51C7.6 14.38 9.71 16.37 12.44 18.57C14.26 20.04 16.57 21.74 18.002 22.9C19.44 21.74 21.75 20.04 23.57 18.57C26.3 16.37 28.41 14.38 28.41 11.51C28.41 9.44 26.83 6.02 23.22 6.02C19.61 6.02 18.002 9.53 18.002 9.53Z"
+              fill="white" />
+            <circle class="d1" cx="4" cy="10" r="1.5" />
+            <circle class="d2" cx="7" cy="5" r="1" />
+            <circle class="d3" cx="32" cy="10" r="1.5" />
+            <circle class="d4" cx="29" cy="5" r="1" />
+            <line class="sparks-left" x1="6" y1="17" x2="1" y2="15" stroke-width="2" stroke-linecap="round" />
+            <line class="sparks-right" x1="30" y1="17" x2="35" y2="15" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <button class="card__like-button button" type="button">
+          <span class="button__text">Like</span>
+        </button>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+
+    <dialog class="dialog" id="save-dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"
+          fill="none">
+          <rect x="1" y="1" width="26" height="26" rx="1" stroke="black" stroke-width="2" fill="black" />
+          <rect x="5" y="1" width="14" height="9" rx="1" fill="white" />
+          <rect x="17" y="1" width="4" height="6" rx="1" fill="black" />
+          <rect x="5" y="14" width="18" height="12" rx="1" fill="white" />
+          <rect x="9" y="17" width="10" height="5" rx="1" fill="black" />
+        </svg>
+        <p class="dialog__text">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</p>
+      </div>
+      <form method="dialog">
+        <button class="dialog__button button" type="submit">
+          <span class="button__text">ОК</span>
+        </button>
+      </form>
+    </dialog>
+
+    <button class="footer__save button" type="button" onclick="document.getElementById('save-dialog').showModal()">
+      <svg class="footer__save-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"
+        fill="none">
+        <rect x="1" y="1" width="26" height="26" rx="1" stroke="currentColor" stroke-width="2" fill="currentColor" />
+        <rect x="5" y="1" width="14" height="9" rx="1" fill="white" />
+        <rect x="17" y="1" width="4" height="6" rx="1" fill="currentColor" />
+        <rect x="5" y="14" width="18" height="12" rx="1" fill="white" />
+        <rect x="9" y="17" width="10" height="5" rx="1" fill="currentColor" />
+      </svg>
+      <span class="button__text">Сохранить на память</span>
+    </button>
+  </footer>
+
+  <script src="scripts/like.js"></script>
+</body>
+
 </html>

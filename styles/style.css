@@ -10,7 +10,437 @@
 
 */
 
+/* ========== PAGE ========== */
+
+/* Серый точечный фон покрывает всю страницу.
+   Контент (.content) перекрывает его белым фоном,
+   начиная с середины первой карточки — так серый фон
+   естественно «заходит» за первую карточку. */
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-main);
+  color: var(--color-black);
+  background-color: var(--color-background);
+    background-image: repeating-conic-gradient(#000000 0%, #000000 25%, transparent 0%, transparent 50%);
+  background-size: 4px 4px;
+}
+
+/* ========== HEADER ========== */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Увеличенный нижний padding — «продлевает» серую область шапки */
+  padding: 100px 0 50px;
+  border-block-end: 0px solid var(--color-black);
+  /* Фон не задаём — наследует серый от .page */
+}
+
+/* Лого-бокс центрирован через flex родителя, без margin-left */
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-background);
+  inline-size: clamp(320px, calc(100% - 68px), 700px);
+  min-block-size: 370px;
+  padding: 50px 10px;
+}
+
+.header__title {
+  font-family: var(--font-accent);
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-family: var(--font-accent);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* ========== CONTENT ========== */
+
+/* Белый фон начинается не сразу — первые ~400px прозрачны,
+   поэтому серый фон страницы просвечивает за изображением первой карточки */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 46px;
+  padding: 46px 0 47px;
+  background: linear-gradient(
+    to bottom,
+    transparent 394px,
+    var(--color-white) 394px
+  );
+}
+
+/* ========== CARD ========== */
+
+/* Карточка не имеет фона — серый фон страницы виден за изображением */
+.card {
+  inline-size: clamp(320px, calc(100% - 68px), 700px);
+  border: 2px solid var(--color-black);
+  /* background-color — задаётся на дочерних секциях, не на всей карточке */
+}
+
+/* Заголовок и текстовые блоки карточки — белые */
+.card__header {
+  padding: 4px 10px;
+  border-block-end: 2px solid var(--color-black);
+  background-color: var(--color-white);
+}
+
+.card__title {
+  font-family: var(--font-accent);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 2.21;
+}
+
+/* Изображение: 1:1 — фургон центрируется одинаково для всех */
+.card__image-block {
+  position: relative;
+  inline-size: 100%;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-block-end: 2px solid var(--color-black);
+}
+
+/* Фильтры для отдельных карточек */
+.card__image--blur {
+  filter: blur(12px);
+  transform: scale(1.05);
+}
+
+.card__image--sepia {
+  filter: sepia(0.6) brightness(0.9);
+}
+
+.card__label {
+  position: absolute;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  color: var(--color-black);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow:
+    -1px 0 var(--color-white),
+    0 1px var(--color-white),
+    1px 0 var(--color-white),
+    0 -1px var(--color-white);
+}
+
+.card__label--top-left {
+  top: 25px;
+  left: 11px;
+}
+
+.card__label--top-right {
+  top: 25px;
+  right: 11px;
+}
+
+.card__label--bottom-left {
+  bottom: 25px;
+  left: 11px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 26.5px;
+  padding: 25px;
+  background-color: var(--color-white);
+}
+
+.card__text {
+  font-size: 18px;
+  line-height: 1.17;
+  font-variation-settings: 'wght' 400;
+}
+
+.card__memory {
+  font-size: 18px;
+  line-height: 1.17;
+  font-variation-settings: 'wght' 400;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  padding: 0 25px 25px;
+  background-color: var(--color-white);
+}
+
+/* ========== BUTTONS ========== */
+
+.button {
+  position: relative;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-white);
+  cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--color-black);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 0.9;
+  mix-blend-mode: difference;
+  color: var(--color-white);
+}
+
+.card__like-button {
+  padding: 9px 17px;
+  min-inline-size: 130px;
+}
+
+.card__icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--color-black);
+}
+
+/* ========== LIKE ICON ========== */
+
+.like-icon {
+  display: block;
+}
+
+.like-icon .main-body {
+  fill: var(--color-white);
+  stroke: var(--color-black);
+  stroke-width: 1.5;
+  transition: fill 0.3s linear;
+  transform-origin: center;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .d1,
+.like-icon .d2,
+.like-icon .d3,
+.like-icon .d4 {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.like-icon .sparks-left,
+.like-icon .sparks-right {
+  stroke: transparent;
+  transition: stroke 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+  animation: like-heart-scale 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-accent);
+}
+
+.like-icon.is-liked .d1,
+.like-icon.is-liked .d2,
+.like-icon.is-liked .d3,
+.like-icon.is-liked .d4 {
+  fill: var(--color-accent);
+}
+
+.like-icon.is-liked .sparks-left,
+.like-icon.is-liked .sparks-right {
+  stroke: var(--color-accent);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 0 93px;
+  background-color: var(--color-white);
+  inline-size: 100%;
+}
+
+.footer__text {
+  inline-size: clamp(320px, calc(100% - 68px), 700px);
+  font-size: 18px;
+  line-height: 1.17;
+  font-variation-settings: 'wght' 400;
+}
+
+/* ========== DIALOG ========== */
+
+.dialog {
+  border: 2px solid var(--color-black);
+  background-color: var(--color-white);
+  padding: 30px;
+  max-inline-size: clamp(320px, calc(100% - 68px), 357px);
+  overflow: hidden;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 30px;
+}
+
+.dialog__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  inline-size: 100%;
+  padding: 9px 0;
+  text-transform: uppercase;
+}
+
+/* ========== SAVE BUTTON ========== */
+
+.footer__save {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+}
+
+.footer__save-icon {
+  position: relative;
+  z-index: 1;
+  inline-size: 28px;
+  block-size: 28px;
+  mix-blend-mode: difference;
+  flex-shrink: 0;
+}
+
+/* ========== MOBILE 375px ========== */
+
+@media (max-width: 500px) {
+  /* Шапка — без боковых отступов.
+     Зазор шапка→первая карточка по макету = 100px (pb 54 + content pt 46) */
+  .header {
+    padding: 100px 0 54px;
+  }
+
+  /* Лого-бокс — на всю ширину экрана */
+  .header__logo {
+    inline-size: 100%;
+    min-block-size: 327px;
+    padding: 50px 10px;
+    gap: 16px;
+  }
+
+  /* Серый фон доходит до середины картинки первой карточки.
+     По макету: зазор шапка→card1 серый, межкарточные — белые.
+     Переход на середине изображения = 286px от верха .content */
+  .content {
+    gap: 50px;
+    background: linear-gradient(
+      to bottom,
+      transparent 286px,
+      var(--color-white) 286px
+    );
+  }
+
+  /* Карточки — на всю ширину */
+  .card {
+    inline-size: 100%;
+  }
+
+  /* Кнопка «Сохранить» — вертикальная: иконка над текстом */
+  .footer__save {
+    flex-direction: column;
+  }
+
+  .footer__save-icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  /* Диалог на всю ширину */
+  .dialog {
+    max-inline-size: calc(100% - 30px);
+    padding: 30px;
+  }
 }
