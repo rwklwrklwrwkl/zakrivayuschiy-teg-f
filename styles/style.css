@@ -4,8 +4,10 @@
   color: var(--text-color);
   font-family: var(--main-font);
   font-variation-settings: 'wght' var(--main-font-weight);
-  background-color: var(--page-grid-base);
+  background-color: var(--page-background-color);
   background-image: var(--page-background-image);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -50,9 +52,6 @@
   align-items: center;
   gap: 47px;
   padding: 26px 0 100px;
-  background: linear-gradient(to bottom,
-      transparent 420px,
-      var(--page-background-color) 412px);
 }
 
 .card {
@@ -125,7 +124,7 @@
   position: absolute;
   z-index: 1;
   inset-block-start: 25px;
-  inset-inline-end: 13px;
+  inset-inline-end: 30px;
   opacity: 0.5;
   color: var(--text-color);
   font-family: var(--accent-font);
@@ -318,9 +317,6 @@
 
   .content {
     gap: 49px;
-    background: linear-gradient(to bottom,
-        transparent 271px,
-        var(--page-background-color) 271px);
   }
 
   .save-button {

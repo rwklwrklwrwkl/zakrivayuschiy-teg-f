@@ -16,12 +16,12 @@
 
   --content-inline-size: clamp(320px, 100%, 700px);
 
-  --page-grid-base: #d4d4d4;
   --page-background-image:
-    repeating-linear-gradient(to right, #b3b3b3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(to bottom, #b3b3b3 0 2px, transparent 2px 4px);
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 
-  --like-main-body-color: none;
+  --like-main-body-color: transparent;
   --like-contour-color: var(--text-color);
   --like-sparks-color: var(--accent-color);
 }
